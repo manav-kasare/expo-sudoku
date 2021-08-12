@@ -1,3 +1,4 @@
+// christopherdro/sudoku.git
 import _ from "lodash";
 
 const _makePuzzle = (board) => {
@@ -32,9 +33,9 @@ const _makePuzzle = (board) => {
   return boardForEntries(puzzle);
 };
 
-export const makePuzzle = () => _makePuzzle(solvePuzzle(makeArray(81, null)))
+export const makePuzzle = () => _makePuzzle(solvePuzzle(makeArray(81, null)));
 
-export export function ratePuzzle(puzzle, samples) {
+export function ratePuzzle(puzzle, samples) {
   var total = 0;
 
   for (var i = 0; i < samples; i++) {
